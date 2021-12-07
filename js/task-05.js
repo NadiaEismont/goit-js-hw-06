@@ -4,9 +4,9 @@ const refs = {
 }
 
 
-function onSubmit() {
+function onSubmit(e) {
     if (refs.inputEl.value !== '') {
-        refs.outputEl.textContent = refs.inputEl.value;
+        refs.outputEl.textContent = e.currentTarget.value;
     }
     else refs.outputEl.textContent = "Anonymous"
 }
